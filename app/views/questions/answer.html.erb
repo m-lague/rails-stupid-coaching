@@ -1,11 +1,22 @@
-<h1>Questions#answer</h1>
 
-<p> <%= @question %></p>
-<p> - You</p>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <p> <%= @question %></p>
+      <p> - You</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+      <p><%= @answer %></p>
+      <p> - Your coach</p>
+    </div>
+  </div>
+  <%= link_to "new question", ask_path %>
 
-<p><%= QuestionsController.coach_answer_enhanced(@question) %>
+</div>
 
-</p>
-<p> - Your coach</p>
 
-<%= link_to "new question", ask_path %>
+
+
+

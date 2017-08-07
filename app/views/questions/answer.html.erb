@@ -1,0 +1,11 @@
+<h1>Questions#answer</h1>
+
+<p> <%= @question %></p>
+<p> - You</p>
+
+<p><%= QuestionsController.coach_answer_enhanced(@question) %>
+
+</p>
+<p> - Your coach</p>
+
+<%= link_to "new question", ask_path %>
